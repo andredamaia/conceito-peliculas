@@ -1,62 +1,109 @@
-.boilerplate {
-    .row {
-        height: 100vh;
+.banner {
+    position: relative;
+    height: 100vh;
+    padding: 25rem 0;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
     }
 
-    h2 {
-        color: #fff;
-        font-weight: 600;
-        font-size: var(--title-32);
-        margin-bottom: 3rem;
+    .title-banner {
+        margin-left: 22rem;
+
+        p {
+            color: var(--color-light);
+        }
     }
 
-    p {
-        font-weight: 300;
-        color: #FFFFFF40;
+    .banner-options {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        a {
+            position: relative;
+            width: 26.5rem;
+            height: 18.3rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-decoration: none;
+            padding: 3.5rem;
+
+            svg {
+                margin-bottom: 2rem;
+            }
+
+            strong {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 1.8rem;
+            }
+
+            p {
+                color: var(--color-light);
+                font-size: 1.8rem;
+                font-weight: 400;
+                opacity: .5;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .options-produtos {
+            background: #2e2e2e;
+        }
+
+        .options-orcamento {
+            background: var(--color-pomegranate);
+        }
+
+        .video {
+            align-items: center;
+        }
     }
 }
 
-.module-tip {
-    background: #252729;
-    border-radius: 10px;
-    padding: 0 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 8rem;
-    line-height: 8rem;
-    margin-bottom: 1rem;
+.area-white {
+    padding: 8rem 0;
+    position: relative;
+}
 
-    .tip-icon {
-        margin-right: 2rem;
-        width: 4rem;
-        height: 4rem;
-        background: #74ab72;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.pelicula-description {
 
-        svg {
-            transform: scale(.8);
-        }
+    padding: 8rem 0 58rem;
+
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
     }
 
-    .tip-title {
-        color: #fff;
-        font-size: 1.6rem;
-        font-weight: 500;
-
-        span {
-            font-size: 1.4rem;
-            color: #74ab72;
-            display: inline-block;
-            background: #00000020;
-            padding: 0 .5rem;
-            margin: 0 .5rem;
-            height: 2.5rem;
-            line-height: 2.5rem;
-            border-radius: 6px;
-        }
+    svg {
+        position: absolute;
+        bottom: 15rem;
+        right: 40rem;
+        z-index: -1;
+        opacity: 1;
     }
 }
